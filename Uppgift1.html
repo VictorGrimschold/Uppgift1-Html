@@ -74,55 +74,43 @@
       <li>Böcker</li>
     </ul>
     <form action="https://formshow.systementor.se/" method="post">
+      <div>
       <label for="fname">Förnamn:</label>
-
       <input type="text" id="fname" name="fname" placeholder="Victor" />
-
-      <br /><br />
-
+      </div><div>
       <label for="lname">Efternamn:</label>
-
       <input type="text" id="lname" name="lname" placeholder="Grimschöld" />
-
-      <br /><br />
-
+      </div><div>
       <label for="Telefonnummer">Telefonnummer:</label>
-
-      <input
-        type="text"
-        id="Telefonnummer"
-        name="Tel"
-        placeholder="tel"
-      /><br /><br />
-
+      <input type="text" id="Telefonnummer" name="Tel" placeholder="tel" />
+    </div><div>
       <label for="E-post">E.postadress:</label>
-
       <input type="text" id="E-post" name="E-post" placeholder="E-post" />
-
-      <br /><br />
-
-      <p>Allergi mot metall:vill du väja fler håll in controll och klicka</p>
-
-      <select name="Allergi" id="Metaller" multiple>
+    </div><div>
+      <label for="Allergi">Allergi mot metall:vill du väja fler håll in controll och klicka</label>
+      <br/>
+      <select name="Allergi" id="Allergi" multiple>
         <option value="Nickel">Nickel</option>
         <option value="Silver">Silver</option>
         <option value="Zink">Zink</option>
         <option value="Tenn">Tenn</option>
       </select>
-      <br />
-      <input type="checkbox" name="vip-paket" id="Vip-paket" />
-      <p>VIP-Paketet</p>
-      <br />
-      <p>Välj ett lottonummer</p>
-      <input type="number" name="Lottnummer" min="1" max="100" />
-      <br />
-      <p>Egna kommentarer</p>
-      <br />
-      <textarea id="kommentar" name="kommentar" rows="8" cols="50">
-               Ange egen kommnetar om så önskas här 
-        </textarea
-      >
-      <br />
+    </div><div>
+        <label for="vip-paket">VIP-Paketet</label>
+        <input type="checkbox" name="vip-paket" id="vip-paket" />
+      </div><div>
+      <label for="lottnummer">Välj ett lottonummer</label>
+      <input
+        type="number"
+        name="lottnummer"
+        id="lottnummer"
+        min="1"
+        max="100"
+      /></div><div>
+      <label for="kommentar">Egna kommentarer</label> 
+      <br/>
+      <textarea id="kommentar" name="kommentar" rows="8" cols="50" placeholder=" Ange egen kommnetar om så önskas här "></textarea>
+     </div>
       <button type="submit">Skicka</button>
     </form>
     <video width="320" height="240" controls>
