@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Uppgift1VictorGrimschold</title>
+  </head>
+  <body>
+    <h1 style="color: rgb(71, 125, 240)">Lorem ipsum</h1>
+    <p>
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+      tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+      veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+      commodo consequat.
+    </p>
+    <p>
+      Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
+      dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+      proident, sunt in culpa qui officia deserunt mollit anim id est laborum
+    </p>
+    <h3 style="color: rgb(71, 125, 240)">Ipsum Lorem</h3>
+    <div>
+      <ul>
+        <li>Mölk</li>
+        <li>Ägg</li>
+        <li>Mjöl</li>
+      </ul>
+
+      <ol>
+        <li>1</li>
+        <li>2</li>
+        <li>3</li>
+        <li>4</li>
+        <li>5</li>
+      </ol>
+      <div>
+        <img src="image.jpg" alt="Italian Trulli" />
+      </div>
+      <a href="http://www.google.se/">Gå till google</a>
+      <p>
+        <a href="http://www.google.se/" target="_blank">Gå till google </a
+        >(Öppnas i ny flik)
+      </p>
+    </div>
+
+    <ul>
+      <li>Konst</li>
+      <li>
+        Sport
+
+        <ol>
+          <li>Fotboll</li>
+          <li>Ishockey</li>
+          <li>Discgolf</li>
+        </ol>
+      </li>
+      <li>Djur</li>
+      <li>
+        fordon
+        <ol>
+          <li>
+            Motorofordon
+            <ol>
+              <li>Bilar</li>
+
+              <li>Motorcyklar</li>
+            </ol>
+          </li>
+        </ol>
+      </li>
+
+      <li>Filmer</li>
+      <li>Böcker</li>
+    </ul>
+    <form action="https://formshow.systementor.se/" method="post">
+      <label for="fname">Förnamn:</label>
+
+      <input type="text" id="fname" name="fname" placeholder="Victor" />
+
+      <br /><br />
+
+      <label for="lname">Efternamn:</label>
+
+      <input type="text" id="lname" name="lname" placeholder="Grimschöld" />
+
+      <br /><br />
+
+      <label for="Telefonnummer">Telefonnummer:</label>
+
+      <input
+        type="text"
+        id="Telefonnummer"
+        name="Tel"
+        placeholder="tel"
+      /><br /><br />
+
+      <label for="E-post">E.postadress:</label>
+
+      <input type="text" id="E-post" name="E-post" placeholder="E-post" />
+
+      <br /><br />
+
+      <p>Allergi mot metall:vill du väja fler håll in controll och klicka</p>
+
+      <select name="Allergi" id="Metaller" multiple>
+        <option value="Nickel">Nickel</option>
+        <option value="Silver">Silver</option>
+        <option value="Zink">Zink</option>
+        <option value="Tenn">Tenn</option>
+      </select>
+      <br />
+      <input type="checkbox" name="vip-paket" id="Vip-paket" />
+      <p>VIP-Paketet</p>
+      <br />
+      <p>Välj ett lottonummer</p>
+      <input type="number" name="Lottnummer" min="1" max="100" />
+      <br />
+      <p>Egna kommentarer</p>
+      <br />
+      <textarea id="kommentar" name="kommentar" rows="8" cols="50">
+               Ange egen kommnetar om så önskas här 
+        </textarea
+      >
+      <br />
+      <button type="submit">Skicka</button>
+    </form>
+    <video width="320" height="240" controls>
+      <source
+        src="https://aspcodeprod.blob.core.windows.net/school-dev/Sample-MP4-Video-File-for-Testing.mp4"
+        type="video/mp4"
+      />
+
+      Your browser does not support the video tag.
+    </video>
+    <br />
+    <canvas
+      id="myCanvas"
+      width="450"
+      height="100"
+      style="border: 1px solid #d3d3d3"
+    >
+      Your browser does not support the HTML canvas tag.</canvas
+    >
+
+    <script>
+      var c = document.getElementById("myCanvas");
+      var ctx = c.getContext("2d");
+      ctx.font = "30px Arial";
+      ctx.strokeText("Det ör kul med programmering", 20, 30);
+    </script>
+
+    <p>Ändra storleken på webbläsarens fönser för olika bilder.</p>
+
+    <picture>
+      <source media="(min-width:950px)" srcset="natur1.jpg" />
+      <source media="(min-width:800px)" srcset="natur2.jpg" />
+      <img src="natur3.jpg" alt="Råtta" style="width: auto" />
+    </picture>
+  </body>
+</html>
